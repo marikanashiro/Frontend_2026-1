@@ -1,12 +1,56 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aluno Online</title>
+</head>
+
+<body>
+  <aside>
+    <header>
+      <img src="learn.svg" alt="Ícone do Aluno Online">
+      <p class="alunoOnlineParagrafo">Aluno Online</p>
+    </header>
+    <nav>
+      <ul>
+        <li>Dashboard</li>
+        <li>Notas</li>
+        <li>Faltas</li>
+        <li>Boletos</li>
+        <li>Requerimentos</li>
+        <li>Sair</li>
+      </ul>
+    </nav>
+  </aside>
+  <div>
+    <header>
+      <h1>Olá, Aluno!</h1>
+      <img src="/avatar.svg" width="64" class="img" alt="Ícone de Avatar">
+    </header>
+    <main>
+      <h2>Bem-vindo ao portal do aluno</h2>
+      <section class="dashboard">
+        <h3>Mural de Avisos</h3>
+        <p class="card">Inscrição para o projeto de extensão</p>
+        <p class="card">Eleição para representante de turma</p>
+      </section>
+      <section class="dashboard">
+        <h3>Calendário Acadêmico</h3>
+        <p class="card">23/02 - Início do período letivo 2026-1</p>
+        <p class="card">25/04 - Prazo final para aplicação da P1</p>
+        <p class="card">23/06 - Prazo final para aplicação da P2</p>
+        <p class="card">04/07 - Fim do período letivo 2026-1</p>
+      </section>
+      <section class="dashboard">
+        <h3>Minhas disciplinas</h3>
+        <p class="card">Construção de Frontend</p>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
