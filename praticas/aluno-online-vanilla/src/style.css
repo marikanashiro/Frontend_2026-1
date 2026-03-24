@@ -10,7 +10,7 @@
 
   --cor-primaria: #e9e9e9;
   --cor-secundaria: #303030;
-  --cor-erro: rgb(204, 60, 60);
+  --cor-erro: rgb(204 60 60);;
 }
 
 body {
