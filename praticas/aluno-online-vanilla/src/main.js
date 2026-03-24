@@ -11,7 +11,7 @@ botao.addEventListener("click", function (e) {
     emailErro.textContent = '';
     senhaErro.textContent = '';
 
-    if (email.value == "" || senha.value == "") {
+    if (email.value == "") {
         emailErro.textContent = "O campo de e-mail é obrigatório.";
 
         if (senha.value == "") {
