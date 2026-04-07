@@ -1,0 +1,40 @@
+.constante {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 100%;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+table {
+    width: 90%;
+    border: 0.5px solid var(--cor-primaria);
+    margin: 20px;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+td {
+    background-color: white;
+}
+
+@media (width <=768px) {
+    .sidebar {
+        display: none;
+    }
+}

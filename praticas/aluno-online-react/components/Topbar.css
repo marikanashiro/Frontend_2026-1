@@ -1,0 +1,18 @@
+.topbar {
+  display: flex;
+  height: 56px;
+  padding: 35px;
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topbar>h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.topbar>img {
+  height: 40px;
+  width: 40px;
+}
