@@ -5,7 +5,7 @@ function Sidebar() {
         <div className='sidebar'>
             <header>
                 <img src="../src/assets/learn.svg" alt="Ícone do Aluno Online" />
-                <p class="aluno-online-paragrafo">Aluno Online</p>
+                <p className="aluno-online-paragrafo">Aluno Online</p>
             </header>
             <nav>
                 <ul>
