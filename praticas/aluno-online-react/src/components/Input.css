@@ -1,0 +1,29 @@
+.input {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+
+.input-erro {
+    border-color: #cc3c3c;
+}
+
+.mensagem-erro {
+    color: #cc3c3c;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
