@@ -2,7 +2,6 @@ header {
     background-color: var(--cor-primaria);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     font-weight: bold;
     padding: 20px;
 }

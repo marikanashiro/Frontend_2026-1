@@ -1,97 +1,37 @@
-import Sidebar from '../components/Sidebar';
-import Topbar from '../components/Topbar';
-import './Notas.css';
+import PaginaLayout from '../components/PaginaLayout';
+import TabelaGenerica from '../components/TabelaGenerica';
+import '../components/PaginaLayout.css';
 
 function Notas() {
+    const notas20261 = [
+        { disciplina: "BI e Data Warehousing", a1: "", a2: "", a3: "", mencao: "SR" },
+        { disciplina: "Construção de Frontend", a1: "", a2: "", a3: "", mencao: "SR" },
+        { disciplina: "Manutenção de Software e Devops", a1: "", a2: "", a3: "", mencao: "SR" }
+    ];
+
+    const notas20252 = [
+        { disciplina: "Construção de Backend", a1: "5.4", a2: "6.2", a3: "", mencao: "MM" },
+        { disciplina: "Estrutura de Dados", a1: "6.3", a2: "6.1", a3: "", mencao: "MM" },
+        { disciplina: "Gerenciamento de Projetos", a1: "7.4", a2: "7.1", a3: "", mencao: "MS" }
+    ];
+
     return (
-        <div className='constante'>
-            <Sidebar />
+        <PaginaLayout titulo="Minhas notas">
+            <h2>Histórico de Notas por Semestre</h2>
 
-            <main>
-                <Topbar titulo="Minhas notas" />
+            <TabelaGenerica 
+                legenda="2026.1"
+                colunas={["Disciplina", "A1", "A2", "A3", "Menção"]}
+                dados={notas20261}
+            />
 
-                <h2>Histórico de Notas por Semestre</h2>
-
-                <table>
-                    <thead>
-                        <caption>2026.1</caption>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>A1</th>
-                            <th>A2</th>
-                            <th>A3</th>
-                            <th>Menção</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>BI e Data Warehousing</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>SR</td>
-                        </tr>
-
-                        <tr>
-                            <td>Construção de Frontend</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>SR</td>
-                        </tr>
-
-                        <tr>
-                            <td>Manutenção de Software e Devops</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>SR</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table>
-                    <thead>
-                        <caption>2025.2</caption>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>A1</th>
-                            <th>A2</th>
-                            <th>A3</th>
-                            <th>Menção</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Construção de Backend</td>
-                            <td>5.4</td>
-                            <td>6.2</td>
-                            <td></td>
-                            <td>MM</td>
-                        </tr>
-
-                        <tr>
-                            <td>Estrutura de Dados</td>
-                            <td>6.3</td>
-                            <td>6.1</td>
-                            <td></td>
-                            <td>MM</td>
-                        </tr>
-
-                        <tr>
-                            <td>Gerenciamento de Projetos</td>
-                            <td>7.4</td>
-                            <td>7.1</td>
-                            <td></td>
-                            <td>MS</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </main>
-        </div>
-    )
+            <TabelaGenerica 
+                legenda="2025.2"
+                colunas={["Disciplina", "A1", "A2", "A3", "Menção"]}
+                dados={notas20252}
+            />
+        </PaginaLayout>
+    );
 }
 
 export default Notas;

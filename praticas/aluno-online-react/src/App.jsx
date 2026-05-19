@@ -7,10 +7,7 @@ import Requerimentos from "../pages/Requerimentos";
 
 function App() {
   return (
-    <>
-    <Dashboard/>
-    </>
-    
+    <Notas/>
   );
 }
 
