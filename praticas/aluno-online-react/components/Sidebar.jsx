@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
 function Sidebar() {
@@ -9,12 +10,24 @@ function Sidebar() {
             </header>
             <nav>
                 <ul>
-                    <li>Dashboard</li>
-                    <li>Notas</li>
-                    <li>Faltas</li>
-                    <li>Boletos</li>
-                    <li>Requerimentos</li>
-                    <li>Sair</li>
+                    <li>
+                        <NavLink to="/" end>Dashboard</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/notas">Notas</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/faltas">Faltas</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/boletos">Boletos</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/requerimentos">Requerimentos</NavLink>
+                    </li>
+                    <li>
+                        <a href='#' onClick={(e) => {e.preventDefault(); alert("Logout em desenvolvimento.")}}>Sair</a>
+                    </li>
                 </ul>
             </nav>
         </div>
