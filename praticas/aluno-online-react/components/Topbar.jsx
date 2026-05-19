@@ -4,7 +4,7 @@ function Topbar({titulo}) {
     return (
         <header className='topbar'>
             <h1>{titulo}</h1>
-            <img src="../src/assets/avatar.svg" width='64' class='img' alt='Ícone de Avatar'/>
+            <img src="../src/assets/avatar.svg" width='64' className='img' alt='Ícone de Avatar'/>
         </header>
     );
 }

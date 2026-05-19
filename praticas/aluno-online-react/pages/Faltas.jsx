@@ -1,82 +1,37 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import './Faltas.css';
+import PaginaLayout from "../components/PaginaLayout";
+import TabelaGenerica from "../components/TabelaGenerica";
+import '../components/PaginaLayout.css';
 
 function Faltas() {
+    const faltas20261 = [
+        { disciplina: "BI e Data Warehousing", faltas: "0", presenca: "100%" },
+        { disciplina: "Construção de Frontend", faltas: "0", presenca: "100%" },
+        { disciplina: "Manutenção de Software e DevOps", faltas: "0", presenca: "100%" }
+    ];
+
+    const faltas20252 = [
+        { disciplina: "BI e Data Warehousing", faltas: "0", presenca: "100%" },
+        { disciplina: "Construção de Frontend", faltas: "0", presenca: "100%" },
+        { disciplina: "Manutenção de Software e DevOps", faltas: "0", presenca: "100%" }
+    ];
+
     return (
-        <div className="constante">
-            <Sidebar />
+        <PaginaLayout titulo="Minhas Faltas">
+            <h2>Histórico de Faltas por Semestre</h2>
 
-            <main>
-                <Topbar titulo="Minhas Faltas" />
+            <TabelaGenerica 
+                legenda="2026.1"
+                colunas={["Disciplina", "Total de Faltas", "% de Presença"]}
+                dados={faltas20261}
+            />
 
-                <h2>Histórico de faltas por semestre</h2>
-
-                <table>
-                    <thead>
-                        <caption>2026.1</caption>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>Faltas</th>
-                            <th>Presença</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>BI e Data Warehousing</td>
-                            <td>0</td>
-                            <td>100%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Cosntrução de Frontend</td>
-                            <td>0</td>
-                            <td>100%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Manutenção de Software e DevOps</td>
-                            <td>0</td>
-                            <td>100%</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table>
-                    <thead>
-                        <caption>2025.2</caption>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>Faltas</th>
-                            <th>Presença</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Gerenciamento de Projetos</td>
-                            <td>27</td>
-                            <td>87.5%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Estrutura de Dados </td>
-                            <td>9</td>
-                            <td>85%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Construção de Backend</td>
-                            <td>10.5</td>
-                            <td>82.5%</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </main>
-        </div>
-    )
+            <TabelaGenerica 
+                legenda="2025.2"
+                colunas={["Disciplina", "Total de Faltas", "% de Presença"]}
+                dados={faltas20252}
+            />
+        </PaginaLayout>
+    );
 }
 
 export default Faltas;
