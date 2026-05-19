@@ -1,0 +1,45 @@
+.constante {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 100%;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+table {
+    width: 90%;
+    border: 0.5px solid var(--cor-primaria);
+    margin: 20px;
+    background-color: var(--cor-primaria);
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    border-bottom: 0.5px solid var(--cor-primaria);
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+td {
+    background-color: white;
+    padding: 8px 12px;
+}
+
+@media (width <= 768px) {
+    .sidebar {
+        display: none;
+    }
+}

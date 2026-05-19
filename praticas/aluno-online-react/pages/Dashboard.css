@@ -1,0 +1,22 @@
+.constante {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 100%;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+@media (width <= 768px) {
+  .sidebar {
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+header {
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    padding-left: 5px;
+}
+
+.sidebar>img {
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.aluno-online-paragrafo {
+    background-color: var(--cor-primaria);
+}
+
+nav {
+    display: block;
+}
+
+li {
+    padding: 10px;
+    margin-left: 20px;
+}
