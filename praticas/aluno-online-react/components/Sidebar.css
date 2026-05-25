@@ -28,6 +28,25 @@ nav {
 }
 
 li {
-    padding: 10px;
+    padding: 5px 0;
     margin-left: 20px;
+    list-style: none;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    background-color: var(--cor-hover);
+}
+
+a.active {
+    background-color: var(--cor-active) !important;
+    font-weight: bolder;
+    box-shadow: 0 2px 5px var(--cor-sombra);
 }
