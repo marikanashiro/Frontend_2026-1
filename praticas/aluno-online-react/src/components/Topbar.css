@@ -2,8 +2,9 @@
   display: flex;
   height: 56px;
   background-color: white;
-  flex-direction: row;
   justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
 }
 
 .topbar>h1 {
@@ -11,7 +12,13 @@
   font-size: 30px;
 }
 
-.topbar>img {
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-user img {
   height: 40px;
   width: 40px;
 }

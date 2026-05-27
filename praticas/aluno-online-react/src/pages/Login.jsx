@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import './Login.css';
 import Input from '../components/Input';
+import { useAuth } from '../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [emailErro, setEmailErro] = useState('');
     const [senhaErro, setSenhaErro] = useState('');
+
+    const { login } = useAuth();
+    const navegar = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -33,7 +38,8 @@ function Login() {
         }
 
         if (isValid) {
-            alert('Login realizado com sucesso!');
+            login({ email });
+            navegar("/");
         }
     };
 
