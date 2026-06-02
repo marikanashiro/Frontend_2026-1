@@ -1,7 +1,17 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Sidebar.css';
+import { useAuth } from '../hooks/useAuth';
 
 function Sidebar() {
+    const { logout } = useAuth();
+    const navegar = useNavigate();
+
+    const handleLogout = (e) => {
+        e.preventDefault();
+        logout();
+        navegar('/login');
+    };
+
     return (
         <div className='sidebar'>
             <header>
@@ -26,7 +36,7 @@ function Sidebar() {
                         <NavLink to="/requerimentos">Requerimentos</NavLink>
                     </li>
                     <li>
-                        <a href='#' onClick={(e) => {e.preventDefault(); alert("Logout em desenvolvimento.")}}>Sair</a>
+                        <a href='#' onClick={handleLogout}>Sair</a>
                     </li>
                 </ul>
             </nav>
